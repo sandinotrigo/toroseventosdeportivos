@@ -1,0 +1,292 @@
+
+/*MOBILE*/
+.gridnav{display: grid;
+    grid-template-rows: auto;
+    grid-template-columns:auto auto;
+gap: 10px;
+grid-template-areas: "nav logo"
+    ;}
+.divnav{display:flex;
+    flex-direction:column ;    
+    align-content: space-between;
+    justify-content: flex-start
+    ;}
+
+.navlogo{display: flex;
+    flex-direction: reverse column;
+    justify-content:flex-end;
+    align-items:center;
+    }
+
+
+/*GRID QUE ORGANIZA EL LAYOUT DEL MAIN*/
+.main{display: flex;
+flex-direction: column;
+align-content: center;
+justify-content: center;}
+
+/*Flex/grid para organizar los elementos dentro de las celdas grid*/
+
+
+
+        
+/*BACKGROUNDS*/
+/*Background header*/
+.header{background-image: url(../images/nuevasimagenes/imgheader.jpg);
+background-position: center;}
+
+/*Background main*/
+.main{background-image: url(../images/nuevasimagenes/fondomain.jpg);
+background-position: center;
+background-size: cover;}
+
+/*Baground footer*/
+.footer{background-image: url(../images/nuevasimagenes/imgfooterr.jpg);
+background-position: center;
+background-size: cover;}
+
+
+/*BOXMODELING/ESTILO*/
+/*Boxmodeling/tipografia header*/
+#imglogonav{min-width:70px;
+border-radius: 15px;
+border-color: black;
+margin-left: 10px;
+margin-right: 1%;}
+
+.divnav{font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+text-decoration:none;
+color: brown;
+}
+
+/*Boxmodeling/tipografia main*/
+
+
+.proximotorneo{margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;}
+
+#fotoproximotorneo{width: 430px;
+    margin-top: auto;
+    width: 300px
+    ;
+    }
+
+ /*proximascarreras*/   
+.proximascarreras{margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.fotoproximacarrera{width: 300px;}
+
+/*sponsors*/
+.sponsors{margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;}
+
+
+
+/*Boxmodeling footer*/
+.logofooter{width: 50px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIAQUARY TABLET*/
+@media (min-width:768px){
+/*BACKGROUNDS*/
+        /*Background header*/
+        .header{background-image: url(../images/nuevasimagenes/imgheader.jpg);
+            background-position: center;
+            background-size: cover;}
+            
+            /*Background main*/
+            .main{background-image: url(../images/nuevasimagenes/fondomain.jpg);
+            background-position: center;
+            background-size: cover;}
+            
+            /*Baground footer*/
+            .footer{background-image: url(../images/nuevasimagenes/imgfooterr.jpg);
+            background-position: center;
+            background-size: cover;}
+
+
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIAQUARY PC*/
+@media (min-width:1200px){
+
+/*displayflex/grid del header/nav*/
+.gridnav{display: grid;
+    grid-template-rows: auto;
+    grid-template-columns:auto auto;
+gap: 10px;
+grid-template-areas: "nav logo"
+    ;}
+.divnav{display:flex;
+    flex-direction: row;
+    justify-content: space-between;    
+    align-items: center
+    ;}
+
+.navlogo{display: flex;
+    justify-content:flex-end;
+    align-items: flex-start;
+    }
+
+
+/*GRID QUE ORGANIZA EL LAYOUT DEL MAIN*/
+.main{display: grid;
+grid-template-columns: repeat(3,auto);
+grid-template-rows: repeat(3,auto);
+gap: 10px;
+grid-template-areas:
+". torneo ."
+"carreras carreras carreras"
+". sponsors ."
+;} 
+
+.proximotorneo{grid-area: torneo;}
+.proximascarreras{grid-area: carreras;}
+.sponsors{grid-area: sponsors;}
+
+/*Flex/grid para organizar los elementos dentro de las celdas grid*/
+.proximotorneo{display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-content: center;   
+}
+
+.proximascarreras{display: flex;
+flex-direction: row-reverse;
+align-content:center;
+justify-content: space-around;} 
+
+.sponsors{display: flex;
+        align-content: center;
+        justify-content: space-around;}
+
+/*BACKGROUNDS*/
+        /*Background header*/
+        .header{background-image: url(../images/nuevasimagenes/imgheader.jpg);
+        background-position: center;
+        background-size: cover;}
+        
+        /*Background main*/
+        .main{background-image: url(../images/nuevasimagenes/fondomain.jpg);
+        background-position: center;
+        background-size: cover;}
+        
+        /*Baground footer*/
+        .footer{background-image: url(../images/nuevasimagenes/imgfooterr.jpg);
+        background-position: center;
+        background-size: cover;}
+        
+        
+        /*BOXMODELING/ESTILO*/
+        /*Boxmodeling/tipografia header*/
+        #imglogonav{min-width:120px;
+        border-radius: 15px;
+        border-color: black;
+        margin-left: 10px;
+        margin-right: 1%;}
+        
+        .divnav{font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+        text-decoration:none;
+        color: brown;
+        }
+        
+        /*Boxmodeling/tipografia main*/
+        
+        
+        .proximotorneo{margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding: 10px;}
+        
+        #fotoproximotorneo{width:;
+            margin-top: auto;
+            width: 900px
+            ;
+            }
+        
+        /*proximascarreras*/  
+        .h2proxcarrera{font-family: 'Courier New', Courier, monospace;
+        font: size 200px;px;}
+
+        .proximascarreras{margin-left: auto;
+            margin-right: auto;;
+            padding: 10px;
+        }
+        
+        .fotoproximacarrera{width: 702px;height: 500px;;}
+        .fotoproximacarrera-carrera1img{padding-right: 10%;}
+        .fotoproximacarrera-carrera2img{padding: 10%;}
+        
+        /*sponsors*/
+        .sponsors{margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding: 10px;}
+        
+        
+        
+        /*Boxmodeling footer*/
+        .logofooter{width: 100px;
+        height: 60px;}
+/*imagen de fondo del header*/
+
+/*texto del nav*/
+
+/*logo del nav*/
+
+
+/*MAIN*/
+
+}
+
+
+
+
+
