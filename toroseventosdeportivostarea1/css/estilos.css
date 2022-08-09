@@ -67,7 +67,7 @@ color: brown;
     text-align: center;
     padding: 10px;}
 
-#fotoproximotorneo{width: 430px;
+#fotoproximotorneo{
     margin-top: auto;
     width: 300px
     ;
@@ -79,8 +79,8 @@ color: brown;
     text-align: center;
     padding: 10px;
 }
-
 .fotoproximacarrera{width: 300px;}
+
 
 /*sponsors*/
 .sponsors{margin-left: auto;
@@ -274,7 +274,7 @@ animation-direction: alternate;}
                 to {background-color: rgb(26, 181, 88)
                 }
     }
-        }
+        
         
         .fotoproximacarrera{width: 702px;height: 500px;;}
         .fotoproximacarrera-carrera1img{padding-right: 10%;}
@@ -291,6 +291,7 @@ animation-direction: alternate;}
         /*Boxmodeling footer*/
         .logofooter{width: 100px;
         height: 60px;}
+    }
 /*imagen de fondo del header*/
 
 /*texto del nav*/
@@ -299,8 +300,3 @@ animation-direction: alternate;}
 
 
 /*MAIN*/
-
-}
-
-
-
