@@ -23,10 +23,7 @@ grid-template-areas: "nav logo"
 flex-direction: column;
 align-content: center;
 justify-content: center;}
-.torneos{display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;}
+
 
 /*Flex/grid para organizar los elementos dentro de las celdas grid*/
 
@@ -44,13 +41,17 @@ background-position: center;
 background-size: cover;}
 
 /*Baground footer*/
-.footer{background-image: url(../images/nuevasimagenes/imgfooterr.jpg);
+.footermio{background-image: url(../images/nuevasimagenes/imgfooterr.jpg);
 background-position: center;
 background-size: cover;}
 
 
 /*BOXMODELING/ESTILO*/
 /*Boxmodeling/tipografia header*/
+.proximotorneo{margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 10px;}
 #imglogonav{min-width:70px;
 border-radius: 15px;
 border-color: black;
@@ -67,13 +68,18 @@ color: brown;
 /*Boxmodeling/tipografia main*/
 
 
-.proximotorneo{margin-left: auto;
+.h1torneo{margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding: 10px;}
+    padding: 10px;
+color:rgb(2, 4, 81) ;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 400;}
 
 #fotoproximotorneo{
     margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
     width: 300px
     ;
     }
@@ -84,7 +90,8 @@ color: brown;
     text-align: center;
     padding: 10px;
 }
-.fotoproximacarrera{width: 300px;}
+.fotoproximacarrera{width: 300px;
+height: 300px;}
 
 
 /*sponsors*/
@@ -100,34 +107,8 @@ color: brown;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*MEDIAQUARY TABLET*/
-@media (min-width:768px){
-/*BACKGROUNDS*/
+@media (min-width:769px) and (max-width:1199px){
         /*Background header*/
         .header{background-image: url(../images/nuevasimagenes/imgheader.jpg);
             background-position: center;
@@ -142,10 +123,12 @@ color: brown;
             .footer{background-image: url(../images/nuevasimagenes/imgfooterr.jpg);
             background-position: center;
             background-size: cover;}
-
-
-
-            }
+.fotoproximacarrera{width: 700px;
+height: 450px;} 
+#fotoproximotorneo{width: 700px;
+    height: 450px}
+        
+        }
 
 
 
@@ -159,24 +142,6 @@ color: brown;
 
 /*MEDIAQUARY PC*/
 @media (min-width:1200px){
-
-/*displayflex/grid del header/nav*/
-.gridnav{display: grid;
-    grid-template-rows: auto;
-    grid-template-columns:auto auto;
-gap: 10px;
-grid-template-areas: "nav logo"
-    ;}
-.divnav{display:flex;
-    flex-direction: row;
-    justify-content: space-between;    
-    align-items: center
-    ;}
-
-.navlogo{display: flex;
-    justify-content:flex-end;
-    align-items: flex-start;
-    }
 
 
 /*GRID QUE ORGANIZA EL LAYOUT DEL MAIN*/
@@ -198,7 +163,8 @@ grid-template-areas:
 .proximotorneo{display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-content: center;   
+                align-content: center;
+                space-between;   
 }
 
 .proximascarreras{display: flex;
@@ -207,8 +173,8 @@ align-content:center;
 justify-content: space-around;} 
 
 .sponsors{display: flex;
-        align-content: center;
-        justify-content: space-around;}
+        align-items: center;
+        justify-content: center;}
 
 /*BACKGROUNDS*/
         /*Background header*/
@@ -259,10 +225,10 @@ animation-direction: alternate;}
 
 }
 
-
-        #fotoproximotorneo{width:;
+.proximascarreras{display: flex; flex-direction:column ; justify-content: center; align-content: center;}
+#fotoproximotorneo{
             margin-top: auto;
-            width: 900px
+            width: auto
             ;
             }
         
