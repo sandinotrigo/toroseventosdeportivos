@@ -1,30 +1,20 @@
 /*MOBILE*/
-.gridnav{display: grid;
-    grid-template-rows: auto;
-    grid-template-columns:auto auto;
-gap: 10px;
-grid-template-areas: "nav logo"
-    ;}
-.divnav{display:flex;
-    flex-direction:column ;    
-    align-content: space-between;
-    justify-content: flex-start
-    ;}
+header{position: sticky;
+top: 0%;}
+.navbar-collapse{flex-grow: inherit;}  
+.navbar-dark .navbar-nav .nav-link{color:white;}
+.navbar-dark .navbar-nav .nav-link:hover{color:blue;}
 
-.navlogo{display: flex;
-    flex-direction: reverse column;
-    justify-content:flex-end;
-    align-items:center;
-    }
-
-
+/*menu de hamburguesa*/
+.navbar-dark .navbar-toggler{color: blue ;
+border-color:blue;}
 /*GRID QUE ORGANIZA EL LAYOUT DEL MAIN*/
 .main{display: flex;
 flex-direction: column;
 align-content: center;
 justify-content: center;}
 
-
+.navbar-collapse{flex-grow: inherit;}  
 /*Flex/grid para organizar los elementos dentro de las celdas grid*/
 
 
@@ -36,9 +26,7 @@ justify-content: center;}
 background-position: center;}
 
 /*Background main*/
-.main{background-image: url(../images/nuevasimagenes/fondomain.jpg);
-background-position: center;
-background-size: cover;}
+.gradiantes{background-image:linear-gradient(black, white);}
 
 /*Baground footer*/
 .footermio{background-image: url(../images/nuevasimagenes/imgfooterr.jpg);
@@ -68,13 +56,15 @@ color: brown;
 /*Boxmodeling/tipografia main*/
 
 
-.h1torneo{margin-left: auto;
+.h1torneo{  font-family: 'Kanit', sans-serif;
+    font-family: 'Permanent Marker', cursive;
+    margin-left: auto;
     margin-right: auto;
     text-align: center;
     padding: 10px;
 color:rgb(2, 4, 81) ;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-font-weight: 400;}
+
+}
 
 #fotoproximotorneo{
     margin-top: auto;
@@ -142,7 +132,6 @@ height: 450px;}
 
 /*MEDIAQUARY PC*/
 @media (min-width:1200px){
-
 
 /*GRID QUE ORGANIZA EL LAYOUT DEL MAIN*/
 .main{display: grid;
@@ -256,7 +245,7 @@ animation-direction: alternate;}
             margin-right: auto;
             text-align: center;
             padding: 10px;}
-        
+    
         
         
         /*Boxmodeling footer*/
